@@ -641,12 +641,29 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-</style>
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}</style>
 </head>
 <body>
 
 <nav>
-  <div class="nav-logo">SY.</div>
+  <div class="nav-logo">   <img src="profile.jpg" alt="Sharad Yadav" class="profile-img"> </div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
